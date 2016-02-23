@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 27c10c71c952fed4f9122fd1bbe66d7b
-timeCreated: 1455795652
+guid: 184feb89d6c1a974c9664c9c9f46844a
+timeCreated: 1456180634
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -67,10 +67,20 @@ ModelImporter:
     7400002: AttackL1
     7400004: AttackL2
     7400006: AttackL3
-    7400008: Idle
-    7400010: Idle2
-    7400012: WalkF
-    7400014: WalkR
+    7400008: DashB
+    7400010: DashBWithRoot
+    7400012: DashF
+    7400014: DashFwithRoot
+    7400016: DashL
+    7400018: DashR
+    7400020: GetHit1
+    7400022: GetHit1withRoot
+    7400024: Idle
+    7400026: Idle2
+    7400028: WalkB
+    7400030: WalkF
+    7400032: WalkL
+    7400034: WalkR
     9500000: //RootNode
     13700000: Body
     13700002: Sword
@@ -96,10 +106,339 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
-      firstFrame: 0
-      lastFrame: 39
+      name: AttackL1
+      takeName: AttackL1
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: -90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.40873018
+        functionName: BeginAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 2
+        messageOptions: 0
+      - time: 0.81825453
+        functionName: BeginNextAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: InitAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackL2
+      takeName: AttackL2
+      firstFrame: -1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: -90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.15277784
+        functionName: BeginAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 3
+        messageOptions: 0
+      - time: 0.5751317
+        functionName: BeginNextAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: InitAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackL3
+      takeName: AttackL3
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: -90
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.17063497
+        functionName: BeginAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 3
+        messageOptions: 0
+      - time: 1
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: InitAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DashB
+      takeName: DashB
+      firstFrame: -1
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -180,10 +519,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: AttackL1
-      takeName: AttackL1
+      name: DashBWithRoot
+      takeName: DashBWithRoot
       firstFrame: -1
-      lastFrame: 17
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -202,35 +541,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.5863636
-        functionName: BeginAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.8944411
-        functionName: BeginNextAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 1
-        functionName: EndAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0
-        functionName: InitAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 2
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1
@@ -292,10 +603,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: AttackL2
-      takeName: AttackL2
+      name: DashF
+      takeName: DashF
       firstFrame: -1
-      lastFrame: 10
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -314,35 +625,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0
-        functionName: InitAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 3
-        messageOptions: 0
-      - time: 0.3748914
-        functionName: BeginAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.8724293
-        functionName: BeginNextAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 1
-        functionName: EndAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1
@@ -404,10 +687,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: AttackL3
-      takeName: AttackL3
+      name: DashFwithRoot
+      takeName: DashFwithRoot
       firstFrame: -1
-      lastFrame: 8
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -426,28 +709,175 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0
-        functionName: InitAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 1
-        messageOptions: 0
-      - time: 0.442802
-        functionName: BeginAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 1
-        functionName: EndAttack
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GetHit1
+      takeName: GetHit1
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GetHit1withRoot
+      takeName: GetHit1withRoot
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
       transformMask:
       - path: 
         weight: 1
@@ -519,7 +949,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -598,12 +1028,12 @@ ModelImporter:
       firstFrame: -1
       lastFrame: 99
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: -90
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -615,7 +1045,105 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: StartWalk
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkB
+      takeName: WalkB
+      firstFrame: -1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: StartWalk
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -699,7 +1227,105 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: StartWalk
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/ArmLIK
+        weight: 1
+      - path: Armature/Bone/ArmRIK
+        weight: 1
+      - path: Armature/Bone/Bone_001
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_005/Bone_006/Bone_007
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_008/Bone_013/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/Bone/Bone_001/Bone_010/Bone_011/Bone_012
+        weight: 1
+      - path: Armature/Bone/ElbowL
+        weight: 1
+      - path: Armature/Bone/ElbowR
+        weight: 1
+      - path: Armature/Bone/FootLIK
+        weight: 1
+      - path: Armature/Bone/FootRIK
+        weight: 1
+      - path: Armature/Bone/KneeL
+        weight: 1
+      - path: Armature/Bone/KneeR
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkL
+      takeName: WalkL
+      firstFrame: -1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: StartWalk
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -783,7 +1409,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: StartWalk
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -865,7 +1498,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -878,7 +1511,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Bone
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

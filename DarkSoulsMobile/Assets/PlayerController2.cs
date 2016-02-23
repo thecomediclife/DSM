@@ -7,10 +7,15 @@ public class PlayerController2 : MonoBehaviour {
 	public Transform target;
 	public float moveSpeed = 5f;
 
-	private bool attacking = false;
+	public bool dealDamage = false;
+
 	private bool nextAttackInput = false;
 	private bool nextAttackInputSet;
-	private int attackIndex = 1;
+	public int attackIndex = 1;
+	private bool queueNextAttack;
+
+	public enum PlayerState{walking, attacking};
+	public PlayerState currentPlayerState = PlayerState.walking;
 
 	// Use this for initialization
 	void Start () {
@@ -20,73 +25,61 @@ public class PlayerController2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Vector3 moveDirection = transform.right * Input.GetAxis ("Horizontal") + transform.forward * Input.GetAxis ("Vertical");
-		moveDirection = moveDirection * moveSpeed;
-		charContr.Move (moveDirection * Time.deltaTime);
+		if (currentPlayerState == PlayerState.walking) {
+			Vector3 moveDirection = transform.right * Input.GetAxis ("Horizontal") + transform.forward * Input.GetAxis ("Vertical");
+			moveDirection = moveDirection * moveSpeed;
+			charContr.Move (moveDirection * Time.deltaTime);
 
-		Quaternion lookRot = Quaternion.LookRotation (target.position - transform.position);
-		lookRot = Quaternion.Euler(new Vector3 (0f, lookRot.eulerAngles.y, 0f));
-		transform.rotation = lookRot;
+			Quaternion lookRot = Quaternion.LookRotation (target.position - transform.position);
+			lookRot = Quaternion.Euler (new Vector3 (0f, lookRot.eulerAngles.y, 0f));
+			transform.rotation = lookRot;
 
-		anim.SetFloat ("X", Input.GetAxis ("Horizontal"));
-		anim.SetFloat ("Y", Input.GetAxis ("Vertical"));
+			anim.SetFloat ("X", Input.GetAxis ("Horizontal"));
+			anim.SetFloat ("Y", Input.GetAxis ("Vertical"));
+		}
 
 		if (Input.GetKeyDown (KeyCode.Z)) {
-
-			if (!attacking) {
-				anim.SetInteger ("Attack", attackIndex);
-				anim.SetBool ("EndAttack", false);
-				attacking = true;
-			}
-
-			if (nextAttackInput) {
-				anim.SetInteger ("Attack", attackIndex);
-				anim.SetBool ("EndAttack", false);
+			if (!nextAttackInput) {
+				anim.SetInteger ("Attack", 1);
+			} else {
 				nextAttackInputSet = true;
-				nextAttackInput = false;
-				Debug.Log ("run");
 			}
 
-//			if (!attacking) {
-//				anim.SetInteger ("Attack", attackIndex);
-//				anim.SetBool ("EndAttack", false);
-//				attacking = true;
-//			}
-//
-//			if (nextAttackInput && !nextAttackInputSet) {
-//				//anim.SetInteger ("Attack", anim.GetInteger ("Attack") + 1);
-//				nextAttackInputSet = true;
-//				Debug.Log ("set");
-//			}
+			if (queueNextAttack) {
+				anim.SetInteger ("Attack", attackIndex);
+			}
 		}
 	}
 
-	void InitAttack(int attackNum) {
-		attackIndex = attackNum;
-		nextAttackInput = false;
-		nextAttackInputSet = false;
+	void InitAttack() {
+		currentPlayerState = PlayerState.attacking;
 	}
 
-	void BeginAttack() {
-		//nextAttackInput = true;
+	void StartWalk() {
+		currentPlayerState = PlayerState.walking;
+		Debug.Log ("walking");
+	}
+
+	void BeginAttack(int attackNum) {
+		nextAttackInput = true;
+		dealDamage = true;
+
+		attackIndex = attackNum;
 	}
 
 	void BeginNextAttack() {
-		nextAttackInput = true;
+		if (nextAttackInputSet) {
+			anim.SetInteger ("Attack", attackIndex);
+		}
 
-//		if (nextAttackInputSet) {
-//			anim.SetInteger ("Attack", anim.GetInteger ("Attack") + 1);
-//			print (anim.GetInteger ("Attack"));
-//		}
+		queueNextAttack = true;
 	}
 
 	void EndAttack() {
-		if (!nextAttackInputSet) {
-			anim.SetInteger ("Attack", 0);
-			attacking = false;
-			nextAttackInput = false;
-			nextAttackInputSet = false;
-			anim.SetBool ("EndAttack", true);
-		}
+		anim.SetInteger ("Attack", 0);
+		dealDamage = false;
+		nextAttackInput = false;
+		nextAttackInputSet = false;
+		queueNextAttack = false;
 	}
 }
